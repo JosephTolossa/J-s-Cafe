@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J's Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>  
+<body>
+  <header>
+    <h1>J's Cafe</h1>
+    <div class="cart">
+      <h2>Your Cart</h2>
+      <ul id="cart-items">
+      </ul>
+      <p>Total: $<span id="cart-total">0.00</span></p>
+      <button id="confirm-order">Confirm Order</button>
+      <button id="start-new-order">Start New Order</button>
+    </div>
+    <h2>Menu</h2>
+  </header>
+
+  <section class="products">
+    <div class="product" data-id="1" data-name="Baklava" data-price="29.99">
+      <h3>Baklava</h3>
+      <p>Price: $19.99</p>
+      <img src="images/image-baklava-desktop.jpg" alt="Baklava image"> 
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="2" data-name="Brownie" data-price="49.99">
+      <h3>Brownie</h3>
+      <p>Price: $24.99</p>
+      <img src="images/image-brownie-desktop.jpg" alt="Brownie image">
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="3" data-name="Tiramisu" data-price="17.99">
+    <h3>Tiramisu</h3>
+    <p>Price: $17.99</p>
+    <img src="images/image-tiramisu-desktop.jpg" alt="Tiramisu Image">
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+  </div>
+    <div class="product" data-id="4" data-name="Panna-Cotta" data-price="12.99">
+    <h3>Panna-Cotta</h3>
+    <p>Price: $12.99</p>
+    <img src="images/image-panna-cotta-desktop.jpg" alt="Panna-Cotta Image">
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+    </div>
+    <div class="product" data-id="5" data-name="Macaron" data-price="8.99">
+    <h3>Macaron</h3>
+    <p>Price: $8.99</p>
+    <img src="images/image-macaron-desktop.jpg" alt="Macaron Image">
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+<div class="product" data-id="6" data-name="Waffle" data-price="15.99">
+<h3>Waffle</h3>
+<p>Price: $15.99</p>
+<img src="images/image-waffle-desktop.jpg" alt="Tiramisu Image">
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="product" data-id="7" data-name="Meringue" data-price="9.99">
+<h3>Meringue</h3>
+<p>Price: $9.99</p>
+<img src="images/image-meringue-desktop.jpg" alt="Meringue Image">
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="product" data-id="8" data-name="Cake" data-price="6.99">
+<h3>Cake</h3>
+<p>Price: $6.99</p>
+<img src="images/image-cake-desktop.jpg" alt="Cake Image">
+<button class="add-to-cart">Add to Cart</button>
+</div>
+  </section>
+
+  <div id="order-confirmation" class="modal hidden empty-box">
+    <p>Your total is $<span id="order-total">100</span></p>
+    <p>Add Payment Method.</p>
+    <label for="payment-method">Enter Card Number:</label>
+    <input type="text" id="payment-method" name="payment-method">
+    <button id="submit-payment">Enter</button>
+    <p id="confirmation-message" class="hidden">Your order has been confirmed!</p>
+    <button id="close-modal">Close</button>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

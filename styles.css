@@ -1,0 +1,125 @@
+body {
+  /*background: linear-gradient(270deg, #ff7e5f, #feb47b, #86a8e7, #91eae4);*/
+  /*background-size: cover;*/
+  /*animation: gradientAnimation 20s ease infinite;*/
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("images/cafe-backround.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+}
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  header {
+    width: 100%;
+    padding: 1rem;
+    background-color: rgb(45, 132, 154);
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(270deg, #43cea2, #185a9d);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+  }
+
+  h1{
+    font-size: 88px;
+  }
+  h2{
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;
+    /*background-color: rgba(7, 239, 212, 0.8); /* White background with 80% opacity */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a soft shadow */
+  }
+
+  img {
+    width: 150px;
+    height: auto;
+    margin: 10px 50px 20px;
+    border: 1px solid #ccc;
+}
+  
+.product {
+  border: 1px solid #7a3e3e;
+  padding: 20px;
+  margin: 10px;
+  width: 20em;
+  text-align: center;
+  background-color: rgba(121, 182, 178, 0.9); /* Slightly more opaque white background */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for better contrast */
+}
+  
+  .cart {
+    position: fixed; /* Fixes the cart in place */
+    top: 20px; /* Adjust the distance from the top */
+    right: 20px; /* Adjust the distance from the right */
+    /*border: 1px solid #0620e6;*/
+    padding: 10px;
+    width: 300px;
+    /*background: rgb(6, 198, 237); /* Optional: Add a background color */
+    z-index: 1000; /* Optional: Ensure it stays on top of other elements */
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+  }
+
+  
+  button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.6s ease; /* Smooth transition for hover effect */
+  }
+  
+  button:hover {
+    transform: scale(1.1); /* Makes the button grow 10% on hover */
+    box-shadow: 0 8px 16px rgba(3, 43, 91, 0.3); /* Adds a shadow when hovering */
+  }
+  
+  /* Optional: Adding hover effect for the entire product card */
+  .product:hover {
+    transform: scale(1.05); /* Slightly grows the entire product card */
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .hidden {
+    display: none;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(13, 179, 229);
+    border: 1px solid #08e8c6;
+    padding: 20px;
+  }
+  .empty-box {
+    width: 200px;
+    height: 295px;
+    border: 2px solid rgb(208, 15, 15);
+}
+  
